@@ -5,28 +5,28 @@
  */
 
 
-//Twoj komentarz ...
+//Zdefiniowanie funkcji jeden
 function jeden() {
 
-    //Twoj komentarz ...
-    var zmienna1 = 1;
+  //Przypisanie wartosci 1 do zmiennej - zmienna1
+  var zmienna1 = 1
 
-    //Twoj komentarz ...
-    function dwa() {
+  //Wywolanie funkcji dwa
+  function dwa() {
 
-        //Twoj komentarz ...
-        console.log(zmienna1);
+    //Wypisanie zmiennej
+    console.log(zmienna1)
 
-        //Twoj komentarz ...
-        var zmienna2 = 3;
-    }
+    //Przypisanie wartosci w funkcji dwa
+    var zmienna2 = 3
+  }
 
-    //Twoj komentarz ...
-    dwa();
+  //Wywolanie funkcji dwa
+  dwa()
 
-    //Twoj komentarz ...
-    console.log(zmienna2)
+  //Wypisanie zmiennej2
+  console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+/// Ponieważ zmienna2 jest odpalana w funkcji dwa i ta zmienna jest tylko tam przypisana, a nie w całej funkcji jeden
 jeden()
