@@ -1,12 +1,14 @@
 function countHello(range) {
-  let intervalIteration = 0
+  let intervalIteration = 1
 
   if (range >= 0 && range <= 10) {
-    setInterval(function () {
-      if (intervalIteration !== range) {
-        intervalIteration++
-        console.log(`Hello to już ${intervalIteration}`)
+    const interval = setInterval(function () {
+      console.log(`Hello to już ${intervalIteration}`)
+
+      if (intervalIteration === range) {
+        clearInterval(interval)
       }
+      intervalIteration++
     }, 500)
   } else {
     console.log('Podałeś zły zasięg')
